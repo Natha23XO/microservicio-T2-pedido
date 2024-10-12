@@ -10,7 +10,7 @@ import pe.edu.cibertec.microservicio_pedido.service.PedidoService;
 
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("api/v1/pedido")
+@RequestMapping("api/v1/${data}/pedido")
 public class PedidoController {
     private final PedidoService pedidoService;
 

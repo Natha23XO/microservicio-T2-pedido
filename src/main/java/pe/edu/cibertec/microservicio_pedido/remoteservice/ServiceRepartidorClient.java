@@ -8,6 +8,6 @@ import pe.edu.cibertec.microservicio_pedido.model.Repartidor;
 @FeignClient(name = "microservicio-usuarios", contextId = "serviceRepartidorClient")
 public interface ServiceRepartidorClient {
 
-    @GetMapping("/api/v1/repartidor/{id}")
+    @GetMapping("/api/v1/entorno-produccion/repartidor/{id}")
     Repartidor obtenerRepartidorXID(@PathVariable("id") int id);
 }

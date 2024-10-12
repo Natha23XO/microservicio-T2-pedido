@@ -8,6 +8,6 @@ import pe.edu.cibertec.microservicio_pedido.model.Producto;
 @FeignClient(name = "microservicio-producto")
 public interface ServiceProductoClient {
 
-    @GetMapping("/api/v1/producto/{id}")
+    @GetMapping("/api/v1/entorno-test/producto/{id}")
     Producto obtenerProductoXID(@PathVariable("id") int id);
 }
