@@ -9,6 +9,6 @@ import pe.edu.cibertec.microservicio_pedido.model.Cliente;
 @FeignClient(name = "microservicio-usuarios")
 public interface ServiceUsuariosClient {
 
-    @GetMapping("/api/v1/usuario/{id}")
+    @GetMapping("/api/v1/cliente/{id}")
     Cliente obtenerUsuarioXID(@PathVariable("id") int id);
 }

@@ -14,14 +14,9 @@ import pe.edu.cibertec.microservicio_pedido.service.PedidoService;
 public class PedidoController {
     private final PedidoService pedidoService;
 
-    /* PROBANDO
     @GetMapping("/{id}")
-    public Producto obtenerProductoXID(@PathVariable int id) {
-        return pedidoService.obtenerProductoXID(id);
+    public String obtenerInformacionDePedido(@PathVariable int id) {
+        return pedidoService.informacionPedido(id);
     }
-    @GetMapping
-    public String obtenerProductos() {
-        return "Hola";
-    }*/
 
 }
